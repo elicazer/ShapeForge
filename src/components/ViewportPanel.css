@@ -1,0 +1,140 @@
+.viewport-panel {
+    flex: 1;
+    position: relative;
+    background: #1a1a1a;
+}
+
+.viewport-controls {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.viewport-controls button {
+    padding: 6px 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.15s;
+    backdrop-filter: blur(8px);
+}
+
+.viewport-controls button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ddd;
+    border-color: #555;
+}
+
+.viewport-controls button.active {
+    background: rgba(0, 102, 204, 0.5);
+    border-color: #0066cc;
+    color: #fff;
+}
+
+.viewport-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #666;
+    pointer-events: none;
+}
+
+.viewport-message p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.viewport-message .hint {
+    font-size: 14px;
+    color: #555;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    background: var(--bg-toolbar);
+    border-bottom: 1px solid var(--border);
+    -webkit-app-region: drag;
+}
+
+.toolbar button {
+    -webkit-app-region: no-drag;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.12s;
+}
+
+.toolbar button:hover:not(:disabled) {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border-color: var(--border);
+}
+
+.toolbar button.active {
+    background: #1a2a3a;
+    color: #6ab0f3;
+    border-color: #2a4a6a;
+}
+
+.toolbar button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.toolbar-group {
+    display: flex;
+    gap: 2px;
+}
+
+.toolbar-separator {
+    width: 1px;
+    height: 18px;
+    background: #333;
+    margin: 0 6px;
+}
+
+.toolbar-spacer {
+    flex: 1;
+}
+
+.viewport-info {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: #aaa;
+    pointer-events: none;
+    backdrop-filter: blur(8px);
+}
+
+.viewport-info p {
+    margin: 2px 0;
+    font-size: 12px;
+}
+
+.viewport-info .hint {
+    font-size: 11px;
+    color: #666;
+}

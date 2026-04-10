@@ -1,0 +1,58 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #e0e0e0;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Dark theme (default) */
+.theme-dark {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #1e1e1e;
+    --bg-tertiary: #111;
+    --bg-toolbar: #222;
+    --border: #2a2a2a;
+    --text-primary: #e0e0e0;
+    --text-secondary: #aaa;
+    --text-muted: #666;
+    --msg-user: #2d5a8c;
+    --msg-assistant: #2d4a2d;
+    --accent: #0066cc;
+}
+
+/* Light theme */
+.theme-light {
+    --bg-primary: #f5f5f5;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #eaeaea;
+    --bg-toolbar: #f0f0f0;
+    --border: #ddd;
+    --text-primary: #1a1a1a;
+    --text-secondary: #555;
+    --text-muted: #999;
+    --msg-user: #d0e4f5;
+    --msg-assistant: #d4ecd4;
+    --accent: #0066cc;
+    color: #1a1a1a;
+}
+
+/* Midnight theme */
+.theme-midnight {
+    --bg-primary: #0d0d1a;
+    --bg-secondary: #111122;
+    --bg-tertiary: #0a0a14;
+    --bg-toolbar: #0f0f1e;
+    --border: #1a1a33;
+    --text-primary: #c8c8e0;
+    --text-secondary: #8888aa;
+    --text-muted: #555577;
+    --msg-user: #1a2a4a;
+    --msg-assistant: #1a2a1a;
+    --accent: #4488ff;
+}
