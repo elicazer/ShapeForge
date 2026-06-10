@@ -77,10 +77,10 @@ For images, a two-step pipeline is used: the image is first analyzed to extract 
 
 | Provider | Models | Auth |
 |---|---|---|
-| **Gemini** | 2.5 Flash, 2.5 Pro, 3 Flash, 3 Pro | API Key |
-| **OpenAI** | GPT-5.2, GPT-5.1, GPT-5, GPT-4.1, o3, o4-mini | API Key |
-| **Anthropic** | Claude Opus 4.6, Sonnet 4.6, Haiku 4.5 | API Key |
-| **AWS Bedrock** | Claude Opus 4.6, Sonnet 4.6, Haiku 4.5 + more | Bedrock API Key + Region |
+| **Gemini** | Gemini 3.1 Pro, 3.5 Flash, 3 Flash, 3.1 Flash-Lite, 2.5 Pro/Flash | API Key |
+| **OpenAI** | GPT-5.5, GPT-5.5 Pro, GPT-5.4, GPT-5.2, GPT-5.1, GPT-5 Mini/Nano | API Key |
+| **Anthropic** | Claude Fable 5, Opus 4.8, Opus 4.7, Sonnet 4.6, Haiku 4.5 | API Key |
+| **AWS Bedrock** | Claude Fable 5, Opus 4.8, Sonnet 4.6, Opus 4.6, Haiku 4.5 + more | Bedrock API Key + Region |
 
 ## 📁 Project Structure
 
