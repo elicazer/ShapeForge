@@ -8,35 +8,37 @@ interface SettingsModalProps {
 }
 
 const geminiModels = [
-    { id: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash (fast)' },
-    { id: 'gemini-2.5-pro', label: 'Gemini 2.5 Pro' },
+    { id: 'gemini-3.1-pro-preview', label: 'Gemini 3.1 Pro (flagship)' },
+    { id: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash (latest)' },
     { id: 'gemini-3-flash-preview', label: 'Gemini 3 Flash (preview)' },
-    { id: 'gemini-3-pro-preview', label: 'Gemini 3 Pro (preview)' },
+    { id: 'gemini-3.1-flash-lite', label: 'Gemini 3.1 Flash-Lite (fast)' },
+    { id: 'gemini-2.5-pro', label: 'Gemini 2.5 Pro' },
+    { id: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash' },
 ];
 
 const bedrockModels = [
-    { id: 'global.anthropic.claude-sonnet-4-6', label: 'Claude Sonnet 4.6 (latest)' },
+    { id: 'global.anthropic.claude-fable-5', label: 'Claude Fable 5 (most capable)' },
+    { id: 'global.anthropic.claude-opus-4-8', label: 'Claude Opus 4.8' },
+    { id: 'global.anthropic.claude-sonnet-4-6', label: 'Claude Sonnet 4.6' },
     { id: 'global.anthropic.claude-opus-4-6-v1', label: 'Claude Opus 4.6' },
     { id: 'global.anthropic.claude-sonnet-4-5-20250929-v1:0', label: 'Claude Sonnet 4.5' },
-    { id: 'global.anthropic.claude-opus-4-5-20251101-v1:0', label: 'Claude Opus 4.5' },
-    { id: 'global.anthropic.claude-opus-4-1-20250805-v1:0', label: 'Claude Opus 4.1' },
-    { id: 'global.anthropic.claude-sonnet-4-20250514-v1:0', label: 'Claude Sonnet 4' },
     { id: 'global.anthropic.claude-haiku-4-5-20251001-v1:0', label: 'Claude Haiku 4.5 (fast)' },
 ];
 
 const openaiModels = [
-    { id: 'gpt-5.2', label: 'GPT-5.2 (flagship)' },
+    { id: 'gpt-5.5', label: 'GPT-5.5 (flagship)' },
+    { id: 'gpt-5.5-pro', label: 'GPT-5.5 Pro (highest quality)' },
+    { id: 'gpt-5.4', label: 'GPT-5.4' },
+    { id: 'gpt-5.2', label: 'GPT-5.2' },
     { id: 'gpt-5.1', label: 'GPT-5.1' },
-    { id: 'gpt-5', label: 'GPT-5' },
     { id: 'gpt-5-mini', label: 'GPT-5 Mini (fast)' },
-    { id: 'gpt-4.1', label: 'GPT-4.1' },
-    { id: 'gpt-4.1-mini', label: 'GPT-4.1 Mini' },
-    { id: 'o3', label: 'o3 (reasoning)' },
-    { id: 'o4-mini', label: 'o4-mini (reasoning, fast)' },
+    { id: 'gpt-5-nano', label: 'GPT-5 Nano (fastest)' },
 ];
 
 const anthropicModels = [
-    { id: 'claude-opus-4-6', label: 'Claude Opus 4.6 (most capable)' },
+    { id: 'claude-fable-5', label: 'Claude Fable 5 (most capable)' },
+    { id: 'claude-opus-4-8', label: 'Claude Opus 4.8' },
+    { id: 'claude-opus-4-7', label: 'Claude Opus 4.7' },
     { id: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6' },
     { id: 'claude-haiku-4-5-20251001', label: 'Claude Haiku 4.5 (fast)' },
 ];

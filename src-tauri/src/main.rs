@@ -31,7 +31,7 @@ async fn set_credentials(
     let creds = match provider.as_str() {
         "gemini" => {
             let key = api_key.ok_or("Gemini API key is required.")?;
-            let mdl = model.unwrap_or_else(|| "gemini-2.5-flash".to_string());
+            let mdl = model.unwrap_or_else(|| "gemini-3.5-flash".to_string());
             Credentials::Gemini { api_key: key, model: mdl }
         }
         "bedrock" => {
@@ -46,7 +46,7 @@ async fn set_credentials(
         }
         "openai" => {
             let key = api_key.ok_or("OpenAI API key is required.")?;
-            let mdl = model.unwrap_or_else(|| "gpt-5.2".to_string());
+            let mdl = model.unwrap_or_else(|| "gpt-5.5".to_string());
             Credentials::OpenAI { api_key: key, model: mdl }
         }
         "anthropic" => {
